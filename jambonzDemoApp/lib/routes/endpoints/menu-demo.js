@@ -4,7 +4,27 @@ const WebhookResponse = require('@jambonz/node-client').WebhookResponse;
 // User calls a fixed phone number with this app set to the number in the Phone Numbers section of the web portal
 // Phone number is a Twilio phone number
 
-//Check line 99 for hook that may be causing the issue
+// Does this webhook cause an error that restart feature-server?
+router.post('/answeringMachineDetection', async (req, res) => {
+    const { logger } = req.app.locals;
+    const payload = req.body;
+    const { type, reason } = payload;
+    let currentTime = new Date().getTime();
+    logger.info({payload}, currentTime + ' POST /menu-demo/menu-greeting');
+    console.log(`/answeringMachineDetection type: ${type}, reason: ${reason}`);
+
+    if (type === 'amd_no_speech_detected') {
+      return {
+        "verb": "say",
+        "text": "Record your message and press pound or press star to contact the operator.",
+        "synthesizer" : {
+          "vendor": "Google",
+          "language": "en-US"
+        }
+      }
+    }
+    //res.sendStatus(200); // this would return before line 17. Is a return needed if amd_no_speech_detected does not trigger?
+  });
 
 const speechGreeting = `<speak>
 <s>This is a demo app. Please input or say the extension of the employee you are trying to reach.</s>
@@ -95,29 +115,5 @@ router.post('/process-selection-greeting', async (req, res) => {
         res.sendStatus(503);
     }
 });
-
-// only need to have an action if not speech is detected. Does this contain an error that is causing the restarts?
-router.post('/answeringMachineDetection', async (req, res) => {
-    const { logger } = req.app.locals;
-    const payload = req.body;
-    const { type, reason } = payload;
-    let currentTime = new Date().getTime();
-    logger.info({payload}, currentTime + ' POST /menu-demo/menu-greeting');
-    console.log(`/answeringMachineDetection type: ${type}, reason: ${reason}`);
-
-    try {
-        if (type === 'amd_no_speech_detected') {
-            // say verb with instructions for caller
-            const app = new WebhookResponse();
-            app.say({ "text": "Record your message and press pound or press star to contact the operator." });
-            res.status(200).json(app);
-        } else {
-            res.sendStatus(200);
-        }
-    } catch (err) {
-        logger.error({err}, 'Error');
-        res.sendStatus(503);
-    }
-  });
   
-  module.exports = router;
+module.exports = router;
