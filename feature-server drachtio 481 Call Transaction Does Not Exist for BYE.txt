@@ -1,0 +1,91 @@
+2022-11-04T13:36:04-07:00 BYE sip:+15419330450@10.0.2.39:5060 SIP/2.0
+2022-11-04T13:36:04-07:00 Via: SIP/2.0/UDP 34.70.230.94;rport;branch=z9hG4bKUj6FjatZ92N8j
+2022-11-04T13:36:04-07:00 Max-Forwards: 70
+2022-11-04T13:36:04-07:00 From: <sip:103@10.128.0.37:5060>;tag=DSmBr44jBgK0H
+2022-11-04T13:36:04-07:00 To: <sip:+15419330450@10.0.2.39:5060>;tag=jKr3aUDXm1gQr
+2022-11-04T13:36:04-07:00 Call-ID: 1ab1267b-d723-123b-cfaf-ce92a6096053
+2022-11-04T13:36:04-07:00 CSeq: 59243282 BYE
+2022-11-04T13:36:04-07:00 Content-Length: 0
+2022-11-04T13:36:04-07:00  
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.910670 tport.c:3060 tport_deliver() tport_deliver(0x56160d446500): msg 0x56160d4fc000 (325 bytes) from udp/10.128.0.37:5060 next=(nil)
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.910687 tport.c:1157 tport_ref() tport_ref(0x56160d446500): refcount is now 15
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.910704 nta.c:3046 agent_recv_request() nta: received BYE sip:+15419330450@10.0.2.39:5060 SIP/2.0 (CSeq 59243282)
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.910727 nta.c:3344 agent_check_request_via() nta: Via check: received=10.128.0.37
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.910747 nta.c:3416 agent_aliases() nta: canonizing sip:+15419330450@10.0.2.39:5060 with contact
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.910759 nta.c:3229 agent_recv_request() nta: BYE (59243282) going to existing leg
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.910783 tport.c:1157 tport_ref() tport_ref(0x56160d446500): refcount is now 16
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911725 tport.c:1157 tport_ref() tport_ref(0x56160d446500): refcount is now 17
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911768 tport.c:1170 tport_unref() tport_unref(0x56160d446500): refcount is now 16
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911788 ClientController::route_request_inside_dialog - client managing dialog has disconnected: 1ab1267b-d723-123b-cfaf-ce92a6096053;from-tag=jKr3aUDXm1gQr
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911802 ClientController::removeDialog - after removing dialogs count is now: 3
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911825 SipDialogController::addIncomingRequestTransaction - adding transactionId fcd3cac7-8ab1-49fc-861e-b05c19190b2c for irq:0x56160d48a3c0
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911861 tport.c:3297 tport_tsend() tport_tsend(0x56160d446500) tpn = UDP/10.128.0.37:5060
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911894 tport.c:4097 tport_resolve() tport_resolve addrinfo = 10.128.0.37:5060
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911914 tport.c:4786 tport_by_addrinfo() tport_by_addrinfo(0x56160d446500): not found by name UDP/10.128.0.37:5060
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.911933 tport.c:4786 tport_by_addrinfo() tport_by_addrinfo(0x56160d446780): not found by name UDP/10.128.0.37:5060
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912520 tport.c:3547 tport_send_msg() tport_vsend returned 333
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912610 send 333 bytes to udp/[10.128.0.37]:5060 at 20:36:04.911954:
+2022-11-04T13:36:04-07:00 SIP/2.0 481 Call/Transaction Does Not Exist
+2022-11-04T13:36:04-07:00 Via: SIP/2.0/UDP 34.70.230.94;rport=5060;branch=z9hG4bKUj6FjatZ92N8j;received=10.128.0.37
+2022-11-04T13:36:04-07:00 From: <sip:103@10.128.0.37:5060>;tag=DSmBr44jBgK0H
+2022-11-04T13:36:04-07:00 To: <sip:+15419330450@10.0.2.39:5060>;tag=jKr3aUDXm1gQr
+2022-11-04T13:36:04-07:00 Call-ID: 1ab1267b-d723-123b-cfaf-ce92a6096053
+2022-11-04T13:36:04-07:00 CSeq: 59243282 BYE
+2022-11-04T13:36:04-07:00 Content-Length: 0
+2022-11-04T13:36:04-07:00  
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912635 nta.c:6958 incoming_reply() nta: sent 481 Call/Transaction Does Not Exist for BYE (59243282)
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912655 tport.c:1170 tport_unref() tport_unref(0x56160d446500): refcount is now 15
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912691 nta.c:4640 nta_leg_destroy() nta_leg_destroy(0x56160d47a400)
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912713 tport.c:1170 tport_unref() tport_unref(0x56160d446500): refcount is now 14
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912742 TimerDHandler::clearTimerD - freeing ACK orq 0x56160d470f20 associated with invite orq 0x56160d470c60 for call-id/cseq 1ab1267b-d723-123b-cfaf-ce92a6096053 59243281
+2022-11-04T13:36:04-07:00 2022-11-04 20:36:04.912768 tport.c:1170 tport_unref() tport_unref(0x56160d446500): refcount is now 13
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.013737 nta.c:9292 outgoing_timer_dk() nta: timer D fired, terminate INVITE (59243274)
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.013829 nta.c:9113 _nta_outgoing_timer() nta_outgoing_timer: 0/0 resent, 0/4 tout, 1/4 term, 0/8 free
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.013850 nta.c:1367 agent_timer() nta: timer set next to 4 ms
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.018042 nta.c:9171 outgoing_timer_bf() nta: timer F fired, terminating ACK (59243274)
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.018166 nta.c:9113 _nta_outgoing_timer() nta_outgoing_timer: 0/0 resent, 1/4 tout, 0/3 term, 0/8 free
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.018189 nta.c:1367 agent_timer() nta: timer set next to 8705 ms
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.513756 TimerDHandler::timerD - freeing ACK orq 0x56160d471760 associated with invite orq 0x56160d4718c0 for call-id/cseq 12bd0d46-d723-123b-cfaf-ce92a6096053 59243274
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.514238 nta.c:8914 outgoing_free() nta: outgoing_free(0x56160d471760)
+2022-11-04T13:36:06-07:00 2022-11-04 20:36:06.514434 tport.c:1170 tport_unref() tport_unref(0x56160d446500): refcount is now 12
+2022-11-04T13:36:08-07:00 2022-11-04 20:36:08.916546 ClientController::join - Added client, count of connected clients is now: 1
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.652958 tport.c:2782 tport_wakeup_pri() tport_wakeup_pri(0x56160d446500): events IN
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653027 tport.c:2905 tport_recv_event() tport_recv_event(0x56160d446500)
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653060 tport.c:3242 tport_recv_iovec() tport_recv_iovec(0x56160d446500) msg 0x56160d50bc00 from (udp/10.0.2.39:5060) has 320 bytes, veclen = 1
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653165 recv 320 bytes from udp/[10.128.0.37]:5060 at 20:36:13.653082:
+2022-11-04T13:36:13-07:00 BYE sip:10.0.2.39:5060 SIP/2.0
+2022-11-04T13:36:13-07:00 Via: SIP/2.0/UDP 34.70.230.94;rport;branch=z9hG4bKvUZ8K5a36BcUe
+2022-11-04T13:36:13-07:00 Max-Forwards: 70
+2022-11-04T13:36:13-07:00 From: <sip:+15419330450@34.70.230.94:5060>;tag=72vpD2ZXvtDgc
+2022-11-04T13:36:13-07:00 To: <sip:+16514241607@34.70.230.94>;tag=g15H74BptF4HH
+2022-11-04T13:36:13-07:00 Call-ID: 1149d15f-d723-123b-aab1-42010a800025
+2022-11-04T13:36:13-07:00 CSeq: 59243277 BYE
+2022-11-04T13:36:13-07:00 Content-Length: 0
+2022-11-04T13:36:13-07:00  
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653194 tport.c:3060 tport_deliver() tport_deliver(0x56160d446500): msg 0x56160d50bc00 (320 bytes) from udp/10.128.0.37:5060 next=(nil)
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653211 tport.c:1157 tport_ref() tport_ref(0x56160d446500): refcount is now 13
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653231 nta.c:3046 agent_recv_request() nta: received BYE sip:10.0.2.39:5060 SIP/2.0 (CSeq 59243277)
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653260 nta.c:3344 agent_check_request_via() nta: Via check: received=10.128.0.37
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653288 nta.c:3416 agent_aliases() nta: canonizing sip:10.0.2.39:5060 with contact
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653307 nta.c:3229 agent_recv_request() nta: BYE (59243277) going to existing leg
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653338 tport.c:1157 tport_ref() tport_ref(0x56160d446500): refcount is now 14
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653378 tport.c:1157 tport_ref() tport_ref(0x56160d446500): refcount is now 15
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653398 tport.c:1170 tport_unref() tport_unref(0x56160d446500): refcount is now 14
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653417 ClientController::route_request_inside_dialog - client managing dialog has disconnected: 1149d15f-d723-123b-aab1-42010a800025;from-tag=72vpD2ZXvtDgc
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653432 ClientController::removeDialog - after removing dialogs count is now: 2
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653446 SipDialogController::addIncomingRequestTransaction - adding transactionId 1277f83f-bf32-4e0f-a5e6-436467fba09c for irq:0x56160d48adc0
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653475 tport.c:3297 tport_tsend() tport_tsend(0x56160d446500) tpn = UDP/10.128.0.37:5060
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653507 tport.c:4097 tport_resolve() tport_resolve addrinfo = 10.128.0.37:5060
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653521 tport.c:4786 tport_by_addrinfo() tport_by_addrinfo(0x56160d446500): not found by name UDP/10.128.0.37:5060
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653533 tport.c:4786 tport_by_addrinfo() tport_by_addrinfo(0x56160d446780): not found by name UDP/10.128.0.37:5060
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653606 tport.c:3547 tport_send_msg() tport_vsend returned 341
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653651 send 341 bytes to udp/[10.128.0.37]:5060 at 20:36:13.653548:
+2022-11-04T13:36:13-07:00 SIP/2.0 481 Call/Transaction Does Not Exist
+2022-11-04T13:36:13-07:00 Via: SIP/2.0/UDP 34.70.230.94;rport=5060;branch=z9hG4bKvUZ8K5a36BcUe;received=10.128.0.37
+2022-11-04T13:36:13-07:00 From: <sip:+15419330450@34.70.230.94:5060>;tag=72vpD2ZXvtDgc
+2022-11-04T13:36:13-07:00 To: <sip:+16514241607@34.70.230.94>;tag=g15H74BptF4HH
+2022-11-04T13:36:13-07:00 Call-ID: 1149d15f-d723-123b-aab1-42010a800025
+2022-11-04T13:36:13-07:00 CSeq: 59243277 BYE
+2022-11-04T13:36:13-07:00 Content-Length: 0
+2022-11-04T13:36:13-07:00  
+2022-11-04T13:36:13-07:00 2022-11-04 20:36:13.653666 nta.c:6958 incoming_reply() nta: sent 481 Call/Transaction Does Not Exist for BYE (59243277)

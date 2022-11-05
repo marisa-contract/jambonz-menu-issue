@@ -1,0 +1,174 @@
+2022-11-04T13:34:29-07:00 
+2022-11-04T13:34:29-07:00 2022-11-04 14:20:47.417935 [INFO] switch_core.c:2515 
+2022-11-04T13:34:29-07:00 FreeSWITCH Version 1.10.5-release+git~20200818T185121Z~25569c1631~64bit (git 25569c1 2020-08-18 18:51:21Z 64bit)
+2022-11-04T13:34:29-07:00 
+2022-11-04T13:34:29-07:00 FreeSWITCH Started
+2022-11-04T13:34:29-07:00 Max Sessions [1000]
+2022-11-04T13:34:29-07:00 Session Rate [50]
+2022-11-04T13:34:29-07:00 SQL [Enabled]
+2022-11-04T13:34:29-07:00 2022-11-04 14:20:47.417941 [CONSOLE] switch_core.c:2523 
+2022-11-04T13:34:29-07:00 [This app Best viewed at 160x60 or more..]
+2022-11-04T13:34:29-07:00 2022-11-04 20:34:29.577551 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.39:5060 [91968bf4-3aad-495a-b64c-3825a1d1dc85]
+2022-11-04T13:34:29-07:00 2022-11-04 20:34:29.577551 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-04T13:34:29-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 answer()
+2022-11-04T13:34:29-07:00 2022-11-04 20:34:29.617550 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@10.0.2.39:5060!
+2022-11-04T13:34:29-07:00 2022-11-04 20:34:29.617550 [NOTICE] mod_dptools.c:1406 Channel [sofia/drachtio_mrf/nobody@10.0.2.39:5060] has been answered
+2022-11-04T13:34:29-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(send_silence_when_idle=-1)
+2022-11-04T13:34:29-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 socket(10.0.2.39:37637 async full)
+2022-11-04T13:34:29-07:00 2022-11-04 20:34:29.617550 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.39:37637
+2022-11-04T13:34:29-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 answer()
+2022-11-04T13:34:29-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(hangup_after_bridge=false)
+2022-11-04T13:34:29-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(park_after_bridge=true)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account","project_id":"jambonz-project","private_key_id":"6126e5af0adff5104883e5abc0a789d79cde15a6","private_key":"-----BEGIN PRIVATE KEY-----\n {key} \n-----END PRIVATE KEY-----\n","client_email":"jambonz@jambonz-project.iam.gserviceaccount.com","client_id":"100692165982335811894","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/jambonz%40jambonz-project.iam.gserviceaccount.com"})
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_USE_ENHANCED=false)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_ENABLE_WORD_TIME_OFFSETS=false)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_SINGLE_UTTERANCE=true)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_PROFANITY_FILTER=false)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_ALTERNATIVE_LANGUAGE_CODES=)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_MODEL=command_and_search)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 playback(/tmp/tts-7a7c20c0-224e-42c1-8bed-bc0fc9fc29db1bd92ee86ceb335e7f9171455cd58a1748ec2b58.mp3)
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:29.877556 [INFO] mod_google_transcribe.c:377 google_transcribe start transcribing en-US complete
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:31.197506 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:36.917532 [INFO] switch_channel.c:522 RECV DTMF 1:1440
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:37.637706 [INFO] switch_channel.c:522 RECV DTMF 0:1440
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:38.377516 [INFO] switch_channel.c:522 RECV DTMF 3:1440
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:38.377516 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:38.377516 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:38.397521 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:38.397521 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.39:5060 Bug is not attached (race).
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:38.397521 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:38.397521 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 playback(/tmp/tts-7a7c20c0-224e-42c1-8bed-bc0fc9fc29db5c15ab2d4be202a75e05fb61840db1d9a421eb8c.mp3)
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:41.657690 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.39:5060 [e7f073f2-cefc-4ad0-b880-be67768e4a0e]
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:41.677542 [WARNING] switch_core_media.c:4985 RFC2543 from March 1999 called; They want their 0.0.0.0 hold method back.....
+
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:41.677542 [NOTICE] sofia.c:8504 Channel [sofia/drachtio_mrf/nobody@10.0.2.39:5060] has been answered
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:41.677542 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-04T13:34:42-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 answer()
+2022-11-04T13:34:42-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(send_silence_when_idle=-1)
+2022-11-04T13:34:42-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 socket(10.0.2.39:37637 async full)
+2022-11-04T13:34:42-07:00 2022-11-04 20:34:41.677542 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.39:37637
+2022-11-04T13:34:42-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 playback(http://34.135.12.97:1001/sounds/onhold.wav)
+2022-11-04T13:34:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account","project_id":"jambonz-project","private_key_id":"6126e5af0adff5104883e5abc0a789d79cde15a6","private_key":"-----BEGIN PRIVATE KEY-----\n {key} \n-----END PRIVATE KEY-----\n","client_email":"jambonz@jambonz-project.iam.gserviceaccount.com","client_id":"100692165982335811894","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/jambonz%40jambonz-project.iam.gserviceaccount.com"})
+2022-11-04T13:34:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_USE_ENHANCED=true)
+2022-11-04T13:34:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_HINTS=call has been forwarded,at the beep,at the tone,leave a message,leave me a message,not available right now,not available to take your call,can't take your call,I will get back to you,I'll get back to you,we will get back to you,we are unable,we are not available)
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:42.057618 [INFO] mod_google_transcribe.c:377 amd_bug start transcribing en-US interim
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:42.077515 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-04T13:34:44-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 avmd_start()
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:42.237527 [INFO] mod_avmd.c:1224 Avmd dynamic configuration: debug [0], report_status [1], fast_math [0], require_continuous_streak [1], sample_n_continuous_streak [3], sample_n_to_skip [0], require_continuous_streak_amp [1], sample_n_continuous_streak_amp [3], simplified_estimation [1], inbound_channel [0], outbound_channel [1], detection_mode [2], detectors_n [36], detectors_lagged_n [1]
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:42.237527 [ERR] mod_avmd.c:1496 Can't set direction for channel [sofia/drachtio_mrf/nobody@10.0.2.39:5060]
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:42.237527 [ERR] mod_avmd.c:1542 Avmd on channel [sofia/drachtio_mrf/nobody@10.0.2.39:5060] NOT started
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:43.818911 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record"}],"language_code":"en-us","channel_tag":0,"result_end_time":1320}.
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:43.877539 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your"}],"language_code":"en-us","channel_tag":0,"result_end_time":1440}.
+2022-11-04T13:34:44-07:00 2022-11-04 20:34:44.257524 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message"}],"language_code":"en-us","channel_tag":0,"result_end_time":1800}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.377541 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record"}],"language_code":"en-us","channel_tag":0,"result_end_time":1920}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.377541 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" your message"}],"language_code":"en-us","channel_tag":0,"result_end_time":1920}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.477517 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your"}],"language_code":"en-us","channel_tag":0,"result_end_time":2040}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.477517 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" message"}],"language_code":"en-us","channel_tag":0,"result_end_time":2040}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.577541 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your"}],"language_code":"en-us","channel_tag":0,"result_end_time":2160}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.577541 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" message and"}],"language_code":"en-us","channel_tag":0,"result_end_time":2160}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.857565 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message"}],"language_code":"en-us","channel_tag":0,"result_end_time":2400}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:44.857565 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" and press"}],"language_code":"en-us","channel_tag":0,"result_end_time":2400}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:45.077517 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message"}],"language_code":"en-us","channel_tag":0,"result_end_time":2640}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:45.077517 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" and press pound"}],"language_code":"en-us","channel_tag":0,"result_end_time":2640}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:45.177519 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and"}],"language_code":"en-us","channel_tag":0,"result_end_time":2760}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:45.177519 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" press pound"}],"language_code":"en-us","channel_tag":0,"result_end_time":2760}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:45.457539 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press"}],"language_code":"en-us","channel_tag":0,"result_end_time":3000}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:45.457539 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" pound"}],"language_code":"en-us","channel_tag":0,"result_end_time":3000}.
+2022-11-04T13:34:45-07:00 2022-11-04 20:34:45.677520 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound"}],"language_code":"en-us","channel_tag":0,"result_end_time":3240}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:45.777521 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound"}],"language_code":"en-us","channel_tag":0,"result_end_time":3360}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:45.777521 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" or"}],"language_code":"en-us","channel_tag":0,"result_end_time":3360}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.277544
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:45.777521 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" or"}],"language_code":"en-us","channel_tag":0,"result_end_time":3360}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.277544 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound"}],"language_code":"en-us","channel_tag":0,"result_end_time":3840}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.277544 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" or press"}],"language_code":"en-us","channel_tag":0,"result_end_time":3840}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.377531 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or"}],"language_code":"en-us","channel_tag":0,"result_end_time":3960}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.377531 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" press"}],"language_code":"en-us","channel_tag":0,"result_end_time":3960}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.677524 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or"}],"language_code":"en-us","channel_tag":0,"result_end_time":4200}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.677524 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" press star"}],"language_code":"en-us","channel_tag":0,"result_end_time":4200}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.877547 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press"}],"language_code":"en-us","channel_tag":0,"result_end_time":4440}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.877547 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" star"}],"language_code":"en-us","channel_tag":0,"result_end_time":4440}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.977540 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press"}],"language_code":"en-us","channel_tag":0,"result_end_time":4560}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:46.977540 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" star to"}],"language_code":"en-us","channel_tag":0,"result_end_time":4560}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:47.277512 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star"}],"language_code":"en-us","channel_tag":0,"result_end_time":4800}.
+2022-11-04T13:34:47-07:00 2022-11-04 20:34:47.277512 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" to con"}],"language_code":"en-us","channel_tag":0,"result_end_time":4800}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.378608 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star"}],"language_code":"en-us","channel_tag":0,"result_end_time":4920}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.378608 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" to"}],"language_code":"en-us","channel_tag":0,"result_end_time":4920}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.497545 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star"}],"language_code":"en-us","channel_tag":0,"result_end_time":5040}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.497545 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" to contact"}],"language_code":"en-us","channel_tag":0,"result_end_time":5040}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.597542 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star to"}],"language_code":"en-us","channel_tag":0,"result_end_time":5160}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.597542 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" contact the"}],"language_code":"en-us","channel_tag":0,"result_end_time":5160}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.877551 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star to"}],"language_code":"en-us","channel_tag":0,"result_end_time":5400}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.877551 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" contact the op"}],"language_code":"en-us","channel_tag":0,"result_end_time":5400}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.977713 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star to"}],"language_code":"en-us","channel_tag":0,"result_end_time":5520}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:47.977713 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" contact the Opera"}],"language_code":"en-us","channel_tag":0,"result_end_time":5520}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:48.097523 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star to contact"}],"language_code":"en-us","channel_tag":0,"result_end_time":5640}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:48.097523 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" the operator"}],"language_code":"en-us","channel_tag":0,"result_end_time":5640}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:48.197642 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star to contact the"}],"language_code":"en-us","channel_tag":0,"result_end_time":5760}.
+2022-11-04T13:34:49-07:00 2022-11-04 20:34:48.197642 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.0099999997764825821,"is_final":false,"alternatives":[{"confidence":0,"transcript":" operator"}],"language_code":"en-us","channel_tag":0,"result_end_time":5760}.
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:49.197534 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0.89999997615814209,"is_final":false,"alternatives":[{"confidence":0,"transcript":"record your message and press pound or press star to contact the operator"}],"language_code":"en-us","channel_tag":0,"result_end_time":6240}.
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:49.217523 [INFO] mod_google_transcribe.c:70 amd_bug json payload: {"stability":0,"is_final":true,"alternatives":[{"confidence":0.9128386378288269,"transcript":"record your message and press pound or press star to contact the operator"}],"language_code":"en-us","channel_tag":0,"result_end_time":6390}.
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:51.277567 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:51.277567 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:51.297593 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:51.297593 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.39:5060 Bug is not attached (race).
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:51.297593 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:51.297593 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.017533 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-04T13:35:34-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 avmd_stop()
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.040128 [ERR] mod_avmd.c:1571 Stop failed - no avmd session running on this channel [sofia/drachtio_mrf/nobody@10.0.2.39:5060]!
+2022-11-04T13:35:34-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 hangup()
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.077523 [NOTICE] mod_dptools.c:1380 Hangup sofia/drachtio_mrf/nobody@10.0.2.39:5060 [CS_SOFT_EXECUTE] [NORMAL_CLEARING]
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.077523 [NOTICE] switch_ivr_bridge.c:1029 Hangup sofia/drachtio_mrf/nobody@10.0.2.39:5060 [CS_EXCHANGE_MEDIA] [NORMAL_CLEARING]
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.098532 [NOTICE] switch_core_session.c:1744 Session 2 (sofia/drachtio_mrf/nobody@10.0.2.39:5060) Ended
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.098532 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.2.39:5060 [CS_DESTROY]
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.098532 [NOTICE] switch_core_session.c:1744 Session 1 (sofia/drachtio_mrf/nobody@10.0.2.39:5060) Ended
+2022-11-04T13:35:34-07:00 2022-11-04 20:34:57.098532 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.2.39:5060 [CS_DESTROY]
+2022-11-04T13:35:34-07:00 2022-11-04 20:35:33.998337 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.39:5060 [cbf96651-9b6a-4fd6-9408-237310814104]
+2022-11-04T13:35:34-07:00 2022-11-04 20:35:33.998337 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-04T13:35:34-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 answer()
+2022-11-04T13:35:34-07:00 2022-11-04 20:35:33.998337 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@10.0.2.39:5060!
+2022-11-04T13:35:34-07:00 2022-11-04 20:35:33.998337 [NOTICE] mod_dptools.c:1406 Channel [sofia/drachtio_mrf/nobody@10.0.2.39:5060] has been answered
+2022-11-04T13:35:34-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(send_silence_when_idle=-1)
+2022-11-04T13:35:34-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 socket(10.0.2.39:37637 async full)
+2022-11-04T13:35:34-07:00 2022-11-04 20:35:33.998337 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.39:37637
+2022-11-04T13:35:34-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 answer()
+2022-11-04T13:35:34-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(hangup_after_bridge=false)
+2022-11-04T13:35:34-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(park_after_bridge=true)
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account","project_id":"jambonz-project","private_key_id":"6126e5af0adff5104883e5abc0a789d79cde15a6","private_key":"-----BEGIN PRIVATE KEY-----\n {key} \n-----END PRIVATE KEY-----\n","client_email":"jambonz@jambonz-project.iam.gserviceaccount.com","client_id":"100692165982335811894","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/jambonz%40jambonz-project.iam.gserviceaccount.com"})
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_USE_ENHANCED=false)
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_ENABLE_WORD_TIME_OFFSETS=false)
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_SINGLE_UTTERANCE=true)
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_PROFANITY_FILTER=false)
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_ALTERNATIVE_LANGUAGE_CODES=)
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(GOOGLE_SPEECH_MODEL=command_and_search)
+2022-11-04T13:35:44-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 playback(/tmp/tts-beeac8ff-3266-4155-902d-d9360e2ea47b1bd92ee86ceb335e7f9171455cd58a1748ec2b58.mp3)
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:34.120614 [INFO] mod_google_transcribe.c:377 google_transcribe start transcribing en-US complete
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:34.157644 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.517521 [INFO] mod_google_transcribe.c:377 google_transcribe start transcribing en-US complete
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.517521 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.517521 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.517521 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.39:5060 Bug is not attached (race).
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.517521 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.517521 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.537514 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:42.757530 [INFO] switch_channel.c:522 RECV DTMF 1:1440
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:43.597562 [INFO] switch_channel.c:522 RECV DTMF 0:1440
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:44.397539 [INFO] switch_channel.c:522 RECV DTMF 3:1440
+2022-11-04T13:35:44-07:00 2022-11-04 20:35:44.457536 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:44.457536 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:44.477540 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:44.477540 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.39:5060 Bug is not attached (race).
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:44.477540 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:44.477540 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-04T13:35:51-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 playback(/tmp/tts-beeac8ff-3266-4155-902d-d9360e2ea47b5c15ab2d4be202a75e05fb61840db1d9a421eb8c.mp3)
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:47.317618 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.39:5060 [b43c769a-7dde-4316-94e7-c3db9643a067]
+2022-11-04T13:35:51-07:00 EXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.39:5060 playback(http://34.135.12.97:1001/sounds/onhold.wav)
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:47.317618 [WARNING] switch_core_media.c:4985 RFC2543 from March 1999 called; They want their 0.0.0.0 hold method back.....
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:47.317618 [NOTICE] sofia.c:8504 Channel [sofia/drachtio_mrf/nobody@10.0.2.39:5060] has been answered
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:47.317618 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-04T13:35:51-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 answer()
+2022-11-04T13:35:51-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 set(send_silence_when_idle=-1)
+2022-11-04T13:35:51-07:00 EXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.39:5060 socket(10.0.2.39:37637 async full)
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:47.317618 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.39:37637
+2022-11-04T13:35:51-07:00 2022-11-04 20:35:47.557527 [INFO] switch_rtp.c:7719 Auto Changing audio port from 0.0.0.0:32030 to 10.0.2.39:32030
