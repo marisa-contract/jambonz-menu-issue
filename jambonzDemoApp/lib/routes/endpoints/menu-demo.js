@@ -4,27 +4,26 @@ const WebhookResponse = require('@jambonz/node-client').WebhookResponse;
 // User calls a fixed phone number with this app set to the number in the Phone Numbers section of the web portal
 // Phone number is a Twilio phone number
 
-// Does this webhook cause an error that restart feature-server?
-router.post('/answeringMachineDetection', async (req, res) => {
-    const { logger } = req.app.locals;
-    const payload = req.body;
-    const { type, reason } = payload;
-    let currentTime = new Date().getTime();
-    logger.info({payload}, currentTime + ' POST /menu-demo/menu-greeting');
-    console.log(`/answeringMachineDetection type: ${type}, reason: ${reason}`);
+router.post('/answeringMachineDetection', (req, res) => {
+  const { logger } = req.app.locals;
+  const payload = req.body;
+  const { type, reason } = payload;
+  logger.info({payload}, 'POST /menu-demo/answeringMachineDetection');
 
-    if (type === 'amd_no_speech_detected') {
-      return {
-        "verb": "say",
-        "text": "Record your message and press pound or press star to contact the operator.",
-        "synthesizer" : {
-          "vendor": "Google",
-          "language": "en-US"
-        }
+  if (type === 'amd_no_speech_detected') {
+    const app = new WebhookResponse();
+    app.say({
+      text: 'Record your message and press pound or press star to contact the operator.',
+      synthesizer : {
+        vendor: 'Google',
+        language: 'en-US'
       }
-    }
-    //res.sendStatus(200); // this would return before line 17. Is a return needed if amd_no_speech_detected does not trigger?
-  });
+    });
+    return res.status(200).json(app);
+  }
+  // otherwise, just return a 200
+  res.sendStatus(200);
+});
 
 const speechGreeting = `<speak>
 <s>This is a demo app. Please input or say the extension of the employee you are trying to reach.</s>
