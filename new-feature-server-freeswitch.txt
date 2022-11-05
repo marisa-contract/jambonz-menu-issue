@@ -1,0 +1,134 @@
+2022-11-05T15:44:25.487685402Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_USE_ENHANCED=true)
+2022-11-05T15:44:25.487693941Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_HINTS=call has been forwarded,at the beep,at the tone,leave a message,leave me a message,not available right now,not available to take your call,can't take your call,I will get back to you,I'll get back to you,we will get back to you,we are unable,we are not available)
+2022-11-05T15:44:25.487699662Z [m[32m2022-11-05 15:44:25.362601 [INFO] mod_google_transcribe.c:377 amd_bug start transcribing en-US interim
+2022-11-05T15:44:25.487705791Z [m[32m2022-11-05 15:44:25.402565 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-05T15:44:25.487713040Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 avmd_start()
+2022-11-05T15:44:25.487721011Z [m[32m2022-11-05 15:44:25.482636 [INFO] mod_avmd.c:1224 Avmd dynamic configuration: debug [0], report_status [1], fast_math [0], require_continuous_streak [1], sample_n_continuous_streak [3], sample_n_to_skip [0], require_continuous_streak_amp [1], sample_n_continuous_streak_amp [3], simplified_estimation [1], inbound_channel [0], outbound_channel [1], detection_mode [2], detectors_n [36], detectors_lagged_n [1]
+2022-11-05T15:44:25.487757879Z [m[31m2022-11-05 15:44:25.482636 [ERR] mod_avmd.c:1496 Can't set direction for channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060]
+2022-11-05T16:13:47.923841076Z [m[31m2022-11-05 15:44:25.482636 [ERR] mod_avmd.c:1542 Avmd on channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060] NOT started
+2022-11-05T16:13:47.923925753Z [m[32m2022-11-05 15:44:30.342590 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-05T16:13:47.923937588Z [m[32m2022-11-05 15:44:30.342590 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-05T16:13:47.923945071Z [m[32m2022-11-05 15:44:30.362566 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-05T16:13:47.923951701Z [m[32m2022-11-05 15:44:30.362566 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.42:5060 Bug is not attached (race).
+2022-11-05T16:13:47.923976956Z [m[32m2022-11-05 15:44:30.362566 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-05T16:13:47.923983729Z [m[32m2022-11-05 15:44:30.362566 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-05T16:13:47.923990345Z [m[36m2022-11-05 16:13:47.822564 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.42:5060 [569d1676-d621-4987-b39d-81ed3f7f1781]
+2022-11-05T16:13:47.923996185Z [m[32m2022-11-05 16:13:47.822564 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-05T16:13:47.924002497Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 answer()
+2022-11-05T16:13:47.924008665Z [m[36m2022-11-05 16:13:47.842641 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@10.0.2.42:5060!
+2022-11-05T16:13:47.924014778Z [m[36m2022-11-05 16:13:47.842641 [NOTICE] mod_dptools.c:1406 Channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060] has been answered
+2022-11-05T16:13:47.924021397Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(send_silence_when_idle=-1)
+2022-11-05T16:13:47.924027385Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 socket(10.0.2.42:38599 async full)
+2022-11-05T16:13:47.924033237Z [m[36m2022-11-05 16:13:47.842641 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.42:38599
+2022-11-05T16:13:47.924055097Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 answer()
+2022-11-05T16:13:47.924061552Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(hangup_after_bridge=false)
+2022-11-05T16:13:47.924067454Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(park_after_bridge=true)
+2022-11-05T16:14:00.924040749Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account","project_id":"jambonz-project","private_key_id":"6126e5af0adff5104883e5abc0a789d79cde15a6","private_key":"-----BEGIN PRIVATE KEY-----\n key goes here \n-----END PRIVATE KEY-----\n","client_email":"jambonz@jambonz-project.iam.gserviceaccount.com","client_id":"100692165982335811894","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/jambonz%40jambonz-project.iam.gserviceaccount.com"})
+2022-11-05T16:14:00.924104878Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_USE_ENHANCED=false)
+2022-11-05T16:14:00.924114922Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_ENABLE_WORD_TIME_OFFSETS=false)
+2022-11-05T16:14:00.924122555Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_SINGLE_UTTERANCE=true)
+2022-11-05T16:14:00.924129972Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_PROFANITY_FILTER=false)
+2022-11-05T16:14:00.924136147Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_ALTERNATIVE_LANGUAGE_CODES=)
+2022-11-05T16:14:00.924142297Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_MODEL=command_and_search)
+2022-11-05T16:14:00.924148897Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 playback(/tmp/tts-3d17d857-075a-4e1b-bf35-3c0755ab26711bd92ee86ceb335e7f9171455cd58a1748ec2b58.mp3)
+2022-11-05T16:14:00.924155281Z [m[32m2022-11-05 16:13:47.962704 [INFO] mod_google_transcribe.c:377 google_transcribe start transcribing en-US complete
+2022-11-05T16:14:00.924162225Z [m[32m2022-11-05 16:13:47.982566 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-05T16:14:00.924169578Z [m[32m2022-11-05 16:13:53.422624 [INFO] switch_channel.c:522 RECV DTMF 1:1440
+2022-11-05T16:14:00.924175725Z [m[32m2022-11-05 16:13:53.982563 [INFO] switch_channel.c:522 RECV DTMF 0:1440
+2022-11-05T16:14:00.924182369Z [m[32m2022-11-05 16:13:54.602594 [INFO] switch_channel.c:522 RECV DTMF 3:1440
+2022-11-05T16:14:00.924188409Z [m[32m2022-11-05 16:13:54.642568 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-05T16:14:00.924194398Z [m[32m2022-11-05 16:13:54.642568 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-05T16:14:00.924201332Z [m[32m2022-11-05 16:13:54.662565 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-05T16:14:00.924223795Z [m[32m2022-11-05 16:13:54.662565 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.42:5060 Bug is not attached (race).
+2022-11-05T16:14:00.924230454Z [m[32m2022-11-05 16:13:54.662565 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-05T16:14:00.924235964Z [m[32m2022-11-05 16:13:54.662565 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-05T16:14:00.924241612Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 playback(/tmp/tts-3d17d857-075a-4e1b-bf35-3c0755ab26715c15ab2d4be202a75e05fb61840db1d9a421eb8c.mp3)
+2022-11-05T16:14:00.924248494Z [m[36m2022-11-05 16:13:57.542701 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.42:5060 [ebb21660-fd8d-433d-82ba-680d30677d8d]
+2022-11-05T16:14:00.924264715Z [m[35m2022-11-05 16:13:57.562594 [WARNING] switch_core_media.c:4985 RFC2543 from March 1999 called; They want their 0.0.0.0 hold method back.....
+2022-11-05T16:14:00.924270376Z [m[36m2022-11-05 16:13:57.562594 [NOTICE] sofia.c:8504 Channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060] has been answered
+2022-11-05T16:14:00.924276390Z [m[32m2022-11-05 16:13:57.562594 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-05T16:14:00.924282071Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 answer()
+2022-11-05T16:14:00.924287617Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(send_silence_when_idle=-1)
+2022-11-05T16:14:00.924293338Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 socket(10.0.2.42:38599 async full)
+2022-11-05T16:14:00.924299114Z [m[36m2022-11-05 16:13:57.562594 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.42:38599
+2022-11-05T16:14:00.924304783Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 playback(http://34.135.12.97:1001/sounds/onhold.wav)
+2022-11-05T16:14:00.924310489Z [m[32m2022-11-05 16:13:57.802586 [INFO] switch_rtp.c:7719 Auto Changing audio port from 0.0.0.0:38492 to 10.0.2.42:38492
+2022-11-05T16:14:13.566972363Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account","project_id":"jambonz-project","private_key_id":"6126e5af0adff5104883e5abc0a789d79cde15a6","private_key":"-----BEGIN PRIVATE KEY-----\n key goes here \n-----END PRIVATE KEY-----\n","client_email":"jambonz@jambonz-project.iam.gserviceaccount.com","client_id":"100692165982335811894","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/jambonz%40jambonz-project.iam.gserviceaccount.com"})
+2022-11-05T16:14:13.567006726Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_USE_ENHANCED=true)
+2022-11-05T16:14:13.567017378Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_HINTS=call has been forwarded,at the beep,at the tone,leave a message,leave me a message,not available right now,not available to take your call,can't take your call,I will get back to you,I'll get back to you,we will get back to you,we are unable,we are not available)
+2022-11-05T16:14:13.567042911Z [m[32m2022-11-05 16:14:00.942592 [INFO] mod_google_transcribe.c:377 amd_bug start transcribing en-US interim
+2022-11-05T16:14:13.567051145Z [m[32m2022-11-05 16:14:00.962560 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-05T16:14:13.567058700Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 avmd_start()
+2022-11-05T16:14:13.567067178Z [m[32m2022-11-05 16:14:01.142594 [INFO] mod_avmd.c:1224 Avmd dynamic configuration: debug [0], report_status [1], fast_math [0], require_continuous_streak [1], sample_n_continuous_streak [3], sample_n_to_skip [0], require_continuous_streak_amp [1], sample_n_continuous_streak_amp [3], simplified_estimation [1], inbound_channel [0], outbound_channel [1], detection_mode [2], detectors_n [36], detectors_lagged_n [1]
+2022-11-05T16:14:13.567074369Z [m[31m2022-11-05 16:14:01.142594 [ERR] mod_avmd.c:1496 Can't set direction for channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060]
+2022-11-05T16:14:13.567081055Z [m[31m2022-11-05 16:14:01.142594 [ERR] mod_avmd.c:1542 Avmd on channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060] NOT started
+2022-11-05T16:14:13.567086835Z [m[32m2022-11-05 16:14:05.982706 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-05T16:14:13.567093456Z [m[32m2022-11-05 16:14:05.982706 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-05T16:14:13.567104158Z [m[32m2022-11-05 16:14:06.002602 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-05T16:14:13.567110331Z [m[32m2022-11-05 16:14:06.002602 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.42:5060 Bug is not attached (race).
+2022-11-05T16:14:13.567116243Z [m[32m2022-11-05 16:14:06.002602 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-05T16:14:13.567122129Z [m[32m2022-11-05 16:14:06.002602 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-05T16:14:57.874122668Z [m[36m2022-11-05 16:14:13.562662 [NOTICE] switch_ivr.c:2250 Transfer sofia/drachtio_mrf/nobody@10.0.2.42:5060 to inline[park@mrf]
+2022-11-05T16:14:57.874182159Z [m[36m2022-11-05 16:14:13.562662 [NOTICE] switch_ivr.c:2250 Transfer sofia/drachtio_mrf/nobody@10.0.2.42:5060 to inline[park@mrf]
+2022-11-05T16:14:57.874191855Z [m[32m2022-11-05 16:14:13.562662 [INFO] switch_channel.c:3213 sofia/drachtio_mrf/nobody@10.0.2.42:5060 Flipping CID from "unknown" <> to "unknown" <>
+2022-11-05T16:14:57.874199240Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 park()
+2022-11-05T16:14:57.874206168Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 park()
+2022-11-05T16:14:57.874213388Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 hangup()
+2022-11-05T16:14:57.874219458Z [m[36m2022-11-05 16:14:13.584782 [NOTICE] mod_dptools.c:1380 Hangup sofia/drachtio_mrf/nobody@10.0.2.42:5060 [CS_EXECUTE] [NORMAL_CLEARING]
+2022-11-05T16:14:57.874226261Z [m[36m2022-11-05 16:14:13.584782 [NOTICE] switch_core_session.c:1744 Session 4 (sofia/drachtio_mrf/nobody@10.0.2.42:5060) Ended
+2022-11-05T16:14:57.874233151Z [m[36m2022-11-05 16:14:13.584782 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.2.42:5060 [CS_DESTROY]
+2022-11-05T16:14:57.874239766Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 hangup()
+2022-11-05T16:14:57.874246915Z [m[36m2022-11-05 16:14:13.622590 [NOTICE] mod_dptools.c:1380 Hangup sofia/drachtio_mrf/nobody@10.0.2.42:5060 [CS_EXECUTE] [NORMAL_CLEARING]
+2022-11-05T16:14:57.874271105Z [m[36m2022-11-05 16:14:13.622590 [NOTICE] switch_core_session.c:1744 Session 3 (sofia/drachtio_mrf/nobody@10.0.2.42:5060) Ended
+2022-11-05T16:14:57.874277694Z [m[36m2022-11-05 16:14:13.622590 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.2.42:5060 [CS_DESTROY]
+2022-11-05T16:14:57.874283901Z [m[36m2022-11-05 16:14:57.762921 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.42:5060 [48416c53-8c7c-458b-b516-549d74bfdcf0]
+2022-11-05T16:14:57.874291514Z [m[32m2022-11-05 16:14:57.762921 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-05T16:14:57.874298178Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 answer()
+2022-11-05T16:14:57.874305019Z [m[36m2022-11-05 16:14:57.762921 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@10.0.2.42:5060!
+2022-11-05T16:14:57.874310547Z [m[36m2022-11-05 16:14:57.762921 [NOTICE] mod_dptools.c:1406 Channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060] has been answered
+2022-11-05T16:14:57.874316156Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(send_silence_when_idle=-1)
+2022-11-05T16:14:57.874321685Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 socket(10.0.2.42:32829 async full)
+2022-11-05T16:14:57.874328134Z [m[36m2022-11-05 16:14:57.762921 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.42:32829
+2022-11-05T16:14:57.874333596Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 answer()
+2022-11-05T16:14:57.874339136Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(hangup_after_bridge=false)
+2022-11-05T16:14:57.874345119Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(park_after_bridge=true)
+2022-11-05T16:15:08.209754868Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account","project_id":"jambonz-project","private_key_id":"6126e5af0adff5104883e5abc0a789d79cde15a6","private_key":"-----BEGIN PRIVATE KEY-----\n key goes here \n-----END PRIVATE KEY-----\n","client_email":"jambonz@jambonz-project.iam.gserviceaccount.com","client_id":"100692165982335811894","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/jambonz%40jambonz-project.iam.gserviceaccount.com"})
+2022-11-05T16:15:08.209822724Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_USE_ENHANCED=false)
+2022-11-05T16:15:08.209832947Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_ENABLE_WORD_TIME_OFFSETS=false)
+2022-11-05T16:15:08.209839375Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_SINGLE_UTTERANCE=true)
+2022-11-05T16:15:08.209845895Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_PROFANITY_FILTER=false)
+2022-11-05T16:15:08.209852126Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_ALTERNATIVE_LANGUAGE_CODES=)
+2022-11-05T16:15:08.209858778Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_MODEL=command_and_search)
+2022-11-05T16:15:08.209865785Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 playback(/tmp/tts-28483a40-8b7a-444f-b4d7-6b96b440759d1bd92ee86ceb335e7f9171455cd58a1748ec2b58.mp3)
+2022-11-05T16:15:08.209872419Z [m[32m2022-11-05 16:14:57.882592 [INFO] mod_google_transcribe.c:377 google_transcribe start transcribing en-US complete
+2022-11-05T16:15:08.209879141Z [m[32m2022-11-05 16:14:57.902561 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-05T16:15:08.209886320Z [m[32m2022-11-05 16:15:03.262589 [INFO] switch_channel.c:522 RECV DTMF 1:1440
+2022-11-05T16:15:08.209893144Z [m[32m2022-11-05 16:15:04.062593 [INFO] switch_channel.c:522 RECV DTMF 0:1600
+2022-11-05T16:15:08.209899585Z [m[32m2022-11-05 16:15:04.882660 [INFO] switch_channel.c:522 RECV DTMF 3:1440
+2022-11-05T16:15:08.209905433Z [m[32m2022-11-05 16:15:04.922570 [INFO] mod_google_transcribe.c:367 stop transcribing
+2022-11-05T16:15:08.209911419Z [m[32m2022-11-05 16:15:04.922570 [INFO] mod_google_transcribe.c:133 Received user command command, calling google_speech_session_cleanup (possibly to stop prev transcribe)
+2022-11-05T16:15:08.209918243Z [m[32m2022-11-05 16:15:04.962741 [INFO] mod_google_transcribe.c:94 Got SWITCH_ABC_TYPE_CLOSE, calling google_speech_session_cleanup.
+2022-11-05T16:15:08.209930999Z [m[32m2022-11-05 16:15:04.962741 [INFO] google_glue.cpp:590 sofia/drachtio_mrf/nobody@10.0.2.42:5060 Bug is not attached (race).
+2022-11-05T16:15:08.209936849Z [m[32m2022-11-05 16:15:04.962741 [INFO] mod_google_transcribe.c:97 Finished SWITCH_ABC_TYPE_CLOSE.
+2022-11-05T16:15:08.209943004Z [m[32m2022-11-05 16:15:04.962741 [INFO] mod_google_transcribe.c:135 stopped transcription.
+2022-11-05T16:15:08.209949703Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 playback(/tmp/tts-28483a40-8b7a-444f-b4d7-6b96b440759d5c15ab2d4be202a75e05fb61840db1d9a421eb8c.mp3)
+2022-11-05T16:15:08.209956610Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 playback(http://34.135.12.97:1001/sounds/onhold.wav)
+2022-11-05T16:15:08.209963349Z [m[36m2022-11-05 16:15:07.942603 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.2.42:5060 [ac04ce48-4bee-43b8-b641-a65adaa32421]
+2022-11-05T16:15:08.209968701Z [m[35m2022-11-05 16:15:07.962702 [WARNING] switch_core_media.c:4985 RFC2543 from March 1999 called; They want their 0.0.0.0 hold method back.....
+2022-11-05T16:15:08.209974512Z [m[36m2022-11-05 16:15:07.962702 [NOTICE] sofia.c:8504 Channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060] has been answered
+2022-11-05T16:15:08.209980234Z [m[32m2022-11-05 16:15:07.962702 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2022-11-05T16:15:08.209995172Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 answer()
+2022-11-05T16:15:08.210001298Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(send_silence_when_idle=-1)
+2022-11-05T16:15:08.210006806Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 socket(10.0.2.42:32829 async full)
+2022-11-05T16:15:08.210012477Z [m[36m2022-11-05 16:15:07.962702 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.2.42:32829
+2022-11-05T16:15:17.121283442Z [m[32m2022-11-05 16:15:08.202587 [INFO] switch_rtp.c:7719 Auto Changing audio port from 0.0.0.0:27622 to 10.0.2.42:27622
+2022-11-05T16:15:17.121354701Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_APPLICATION_CREDENTIALS={"type":"service_account","project_id":"jambonz-project","private_key_id":"6126e5af0adff5104883e5abc0a789d79cde15a6","private_key":"-----BEGIN PRIVATE KEY-----\n key goes here \n-----END PRIVATE KEY-----\n","client_email":"jambonz@jambonz-project.iam.gserviceaccount.com","client_id":"100692165982335811894","auth_uri":"https://accounts.google.com/o/oauth2/auth","token_uri":"https://oauth2.googleapis.com/token","auth_provider_x509_cert_url":"https://www.googleapis.com/oauth2/v1/certs","client_x509_cert_url":"https://www.googleapis.com/robot/v1/metadata/x509/jambonz%40jambonz-project.iam.gserviceaccount.com"})
+2022-11-05T16:15:17.121378865Z [m[32mEXECUTE [depth=2] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_HINTS=call has been forwarded,at the beep,at the tone,leave a message,leave me a message,not available right now,not available to take your call,can't take your call,I will get back to you,I'll get back to you,we will get back to you,we are unable,we are not available)
+2022-11-05T16:15:17.121388184Z [m[32mEXECUTE [depth=1] sofia/drachtio_mrf/nobody@10.0.2.42:5060 set(GOOGLE_SPEECH_USE_ENHANCED=true)
+2022-11-05T16:15:17.121394918Z [m[32m2022-11-05 16:15:12.102620 [INFO] mod_google_transcribe.c:377 amd_bug start transcribing en-US interim
+2022-11-05T16:15:17.121401825Z [m[32m2022-11-05 16:15:12.122697 [INFO] mod_google_transcribe.c:88 Got SWITCH_ABC_TYPE_INIT.
+2022-11-05T16:15:17.121408586Z [m[32mEXECUTE [depth=0] sofia/drachtio_mrf/nobody@10.0.2.42:5060 avmd_start()
+2022-11-05T16:15:17.121441734Z [m[32m2022-11-05 16:15:12.282709 [INFO] mod_avmd.c:1224 Avmd dynamic configuration: debug [0], report_status [1], fast_math [0], require_continuous_streak [1], sample_n_continuous_streak [3], sample_n_to_skip [0], require_continuous_streak_amp [1], sample_n_continuous_streak_amp [3], simplified_estimation [1], inbound_channel [0], outbound_channel [1], detection_mode [2], detectors_n [36], detectors_lagged_n [1]
+2022-11-05T16:15:17.121448702Z [m[31m2022-11-05 16:15:12.282709 [ERR] mod_avmd.c:1496 Can't set direction for channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060]
+2022-11-05T16:15:17.121454566Z [m[31m2022-11-05 16:15:12.282709 [ERR] mod_avmd.c:1542 Avmd on channel [sofia/drachtio_mrf/nobody@10.0.2.42:5060] NOT started
+2022-11-05T16:15:17.121460288Z [m[32m2022-11-05 16:15:17.102566 [INFO] mod_google_transcribe.c:367 stop transcribing
