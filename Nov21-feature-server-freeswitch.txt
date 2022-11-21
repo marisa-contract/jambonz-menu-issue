@@ -1,0 +1,31 @@
+2022-11-21T19:19:05.767392606Z [m[36m2022-11-21 19:09:04.274431 [NOTICE] switch_ivr_bridge.c:1213 Hangup sofia/drachtio_mrf/nobody@10.0.3.80:5060 [CS_SOFT_EXECUTE] [ORIGINATOR_CANCEL]
+2022-11-21T19:19:05.767429807Z [m[36m2022-11-21 19:09:04.294424 [NOTICE] switch_core_session.c:1744 Session 49 (sofia/drachtio_mrf/nobody@10.0.3.80:5060) Ended
+2022-11-21T19:19:05.767437896Z [m[36m2022-11-21 19:09:04.294424 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [CS_DESTROY]
+2022-11-21T19:19:05.767443444Z [m[36m2022-11-21 19:09:04.354417 [NOTICE] switch_core_session.c:1744 Session 50 (sofia/drachtio_mrf/nobody@10.0.3.80:5060) Ended
+2022-11-21T19:19:05.767448956Z [m[36m2022-11-21 19:09:04.354417 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [CS_DESTROY]
+2022-11-21T19:19:05.767463455Z [m[36m2022-11-21 19:14:06.635655 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [837dc62a-8f7e-4f8e-99a1-d8f944052637]
+2022-11-21T19:19:05.767469387Z [m[36m2022-11-21 19:14:06.656348 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@10.0.3.80:5060!
+2022-11-21T19:19:05.767475113Z [m[36m2022-11-21 19:14:06.656348 [NOTICE] mod_dptools.c:1406 Channel [sofia/drachtio_mrf/nobody@10.0.3.80:5060] has been answered
+2022-11-21T19:19:05.767481297Z [m[36m2022-11-21 19:14:06.656348 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.3.80:42227
+2022-11-21T19:19:05.767486343Z [m[36m2022-11-21 19:14:20.294414 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [5ddae818-a675-42e2-85e0-4823241104aa]
+2022-11-21T19:19:05.767491482Z [m[35m2022-11-21 19:14:20.316289 [WARNING] switch_core_media.c:4985 RFC2543 from March 1999 called; They want their 0.0.0.0 hold method back.....
+2022-11-21T19:19:05.767496387Z [m[36m2022-11-21 19:14:20.316289 [NOTICE] sofia.c:8504 Channel [sofia/drachtio_mrf/nobody@10.0.3.80:5060] has been answered
+2022-11-21T19:19:05.767501324Z [m[36m2022-11-21 19:14:20.316289 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.3.80:42227
+2022-11-21T19:19:05.767506726Z [m[31m2022-11-21 19:14:20.594410 [ERR] switch_core_session.c:2697 Invalid Application avmd_start
+2022-11-21T19:19:05.767515531Z [m[36m2022-11-21 19:14:20.594410 [NOTICE] switch_core_session.c:2698 Hangup sofia/drachtio_mrf/nobody@10.0.3.80:5060 [CS_CONSUME_MEDIA] [DESTINATION_OUT_OF_ORDER]
+2022-11-21T19:19:05.767521097Z [m[36m2022-11-21 19:14:20.674394 [NOTICE] switch_core_session.c:1744 Session 52 (sofia/drachtio_mrf/nobody@10.0.3.80:5060) Ended
+2022-11-21T19:19:05.767526410Z [m[36m2022-11-21 19:14:20.674394 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [CS_DESTROY]
+2022-11-21T19:19:05.767532464Z [m[36m2022-11-21 19:17:02.435347 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [6eeadce3-b2b1-458a-a7d5-790972b3c9d4]
+2022-11-21T19:19:05.767537687Z [m[36m2022-11-21 19:17:02.474787 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@10.0.3.80:5060!
+2022-11-21T19:19:05.767542650Z [m[36m2022-11-21 19:17:02.474787 [NOTICE] mod_dptools.c:1406 Channel [sofia/drachtio_mrf/nobody@10.0.3.80:5060] has been answered
+2022-11-21T19:19:05.767564925Z [m[36m2022-11-21 19:17:02.474787 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.3.80:38527
+2022-11-21T19:19:05.767570110Z [m[36m2022-11-21 19:17:13.394396 [NOTICE] mod_dptools.c:1380 Hangup sofia/drachtio_mrf/nobody@10.0.3.80:5060 [CS_EXECUTE] [NORMAL_CLEARING]
+2022-11-21T19:19:05.767575713Z [m[36m2022-11-21 19:17:13.414409 [NOTICE] switch_core_session.c:1744 Session 53 (sofia/drachtio_mrf/nobody@10.0.3.80:5060) Ended
+2022-11-21T19:19:05.767580470Z [m[36m2022-11-21 19:17:13.414409 [NOTICE] switch_core_session.c:1748 Close Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [CS_DESTROY]
+2022-11-21T19:19:05.767585236Z [m[36m2022-11-21 19:18:58.014458 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [749b790f-e517-4d98-8f1f-174294c4b510]
+2022-11-21T19:19:05.767590368Z [m[36m2022-11-21 19:18:58.014458 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@10.0.3.80:5060!
+2022-11-21T19:19:05.767595797Z [m[36m2022-11-21 19:18:58.034477 [NOTICE] mod_dptools.c:1406 Channel [sofia/drachtio_mrf/nobody@10.0.3.80:5060] has been answered
+2022-11-21T19:19:05.767601396Z [m[36m2022-11-21 19:18:58.034477 [NOTICE] mod_event_socket.c:452 Trying host: 10.0.3.80:38527
+2022-11-21T19:19:05.767606647Z [m[36m2022-11-21 19:19:05.734397 [NOTICE] switch_channel.c:1118 New Channel sofia/drachtio_mrf/nobody@10.0.3.80:5060 [6f105a8c-5e5a-4d2a-893b-37c0e793a7e2]
+2022-11-21T19:19:05.767612073Z [m[35m2022-11-21 19:19:05.754396 [WARNING] switch_core_media.c:4985 RFC2543 from March 1999 called; They want their 0.0.0.0 hold method back.....
+2022-11-21T19:19:05.767622789Z [m[36m2022-11-21 19:19:05.754396 [NOTICE] sofia.c:8504 Channel [sofia/drachtio_mrf/nobody@10.0.3.80:5060] has been answered
