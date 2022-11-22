@@ -1,0 +1,271 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    cluster-autoscaler.kubernetes.io/safe-to-evict: "true"
+    deployment.kubernetes.io/revision: "28"
+    meta.helm.sh/release-name: jambonz-1651264205
+    meta.helm.sh/release-namespace: jambonz
+  creationTimestamp: "2022-04-29T20:30:13Z"
+  generation: 28
+  labels:
+    app: feature-server
+    app.kubernetes.io/instance: jambonz-1651264205
+    app.kubernetes.io/managed-by: Helm
+  name: feature-server
+  namespace: jambonz
+  resourceVersion: "119435595"
+  uid: bb47bf85-e8f0-49d2-8c5f-c0b6c00f6f78
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: feature-server
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      annotations:
+        kubectl.kubernetes.io/restartedAt: "2022-11-09T18:23:11Z"
+      creationTimestamp: null
+      labels:
+        app: feature-server
+    spec:
+      containers:
+      - args:
+        - drachtio
+        - --contact
+        - sip:*:5060;transport=udp
+        - --loglevel
+        - info
+        - sofia-loglevel
+        - "3"
+        env:
+        - name: CLOUD
+          value: gcp
+        - name: IMDSv2
+        - name: SOFIA_SEARCH_DOMAINS
+          value: "1"
+        - name: SOFIA_SRES_NO_CACHE
+          value: "1"
+        - name: DRACHTIO_SECRET
+          valueFrom:
+            secretKeyRef:
+              key: DRACHTIO_SECRET
+              name: jambonz-secrets
+        image: drachtio/drachtio-server:0.8.18
+        imagePullPolicy: IfNotPresent
+        lifecycle:
+          preStop:
+            exec:
+              command:
+              - /bin/sh
+              - -c
+              - while $(curl --output /dev/null --silent --head --fail-early http://127.0.0.1:3000);
+                do printf '.'; sleep 10; done
+        name: drachtio
+        ports:
+        - containerPort: 9022
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      - args:
+        - freeswitch
+        - --codec-answer-generous
+        env:
+        - name: MOD_AUDIO_FORK_SUBPROTOCOL_NAME
+          value: audio.jambonz.org
+        - name: MOD_AUDIO_FORK_SERVICE_THREADS
+          value: "1"
+        - name: MOD_AUDIO_FORK_BUFFER_SECS
+          value: "3"
+        image: drachtio/drachtio-freeswitch-mrf:0.4.17
+        imagePullPolicy: IfNotPresent
+        lifecycle:
+          preStop:
+            exec:
+              command:
+              - /bin/sh
+              - -c
+              - while $(curl --output /dev/null --silent --head --fail-early http://127.0.0.1:3000);
+                do printf '.'; sleep 10; done
+        name: freeswitch
+        ports:
+        - containerPort: 8081
+          protocol: TCP
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /tmp
+          name: temp-audio-volume
+      - env:
+        - name: AWS_REGION
+          value: us-west-1
+        - name: NODE_ENV
+          value: production
+        - name: HTTP_PORT
+          value: "3000"
+        - name: JAMBONES_LOGLEVEL
+          value: debug
+        - name: VMD_HINTS_FILE
+          value: /etc/voicemail-phraselist.json
+        - name: JAMBONES_INJECT_CONTENT
+          value: "1"
+        - name: K8S
+          value: "1"
+        - name: K8S_SBC_SIP_SERVICE_NAME
+          value: sbc-sip.jambonz
+        - name: JAMBONES_API_BASE_URL
+          value: http://api.jambonz.rdpartnersinc.com/v1
+        - name: JAMBONES_TIME_SERIES_HOST
+          value: influxdb.monitoring
+        - name: DRACHTIO_HOST
+          value: 127.0.0.1
+        - name: DRACHTIO_PORT
+          value: "9022"
+        - name: JAMBONES_FREESWITCH
+          value: 127.0.0.1:8021:JambonzR0ck$
+        - name: ENABLE_METRICS
+          value: "1"
+        - name: JAMBONZ_CLEANUP_INTERVAL_MINS
+          value: "60"
+        - name: STATS_HOST
+          value: telegraf.monitoring
+        - name: STATS_PORT
+          value: "8125"
+        - name: STATS_PROTOCOL
+          value: tcp
+        - name: STATS_TELEGRAF
+          value: "1"
+        - name: STATS_SAMPLE_RATE
+          value: "1"
+        - name: JAMBONES_OTEL_ENABLED
+          value: "1"
+        - name: OTEL_EXPORTER_JAEGER_AGENT_HOST
+          value: jaeger.monitoring
+        - name: OTEL_TRACES_SAMPLER
+          value: parentbased_traceidratio
+        - name: OTEL_TRACES_SAMPLER_ARG
+          value: "1"
+        - name: JAMBONES_REDIS_HOST
+          value: redis.db
+        - name: JAMBONES_REDIS_PORT
+          value: "6379"
+        - name: JAMBONES_MYSQL_DATABASE
+          value: jambones
+        - name: JAMBONES_MYSQL_HOST
+          value: mysql.db
+        - name: JAMBONES_MYSQL_USER
+          value: jambones
+        - name: JAMBONES_MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: MYSQL_PASSWORD
+              name: jambonz-secrets
+        - name: DRACHTIO_SECRET
+          valueFrom:
+            secretKeyRef:
+              key: DRACHTIO_SECRET
+              name: jambonz-secrets
+        - name: JWT_SECRET
+          valueFrom:
+            secretKeyRef:
+              key: JWT_SECRET
+              name: jambonz-secrets
+        image: jambonz/feature-server:0.7.7-13
+        imagePullPolicy: IfNotPresent
+        lifecycle:
+          preStop:
+            exec:
+              command:
+              - /bin/sh
+              - -c
+              - /opt/app/bin/k8s-pre-stop-hook.js
+        name: feature-server
+        ports:
+        - containerPort: 3000
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /health
+            port: 3000
+            scheme: HTTP
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 1
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /tmp
+          name: temp-audio-volume
+        - mountPath: /etc/voicemail-phraselist.json
+          name: voicemail-phraselist
+          subPath: voicemail-phraselist.json
+      dnsPolicy: ClusterFirst
+      initContainers:
+      - command:
+        - sh
+        - -c
+        - "until mysql -u jambones -D jambones -h mysql.db -p${MYSQL_PASSWORD} --protocol=tcp
+          -e \"select count(*) from accounts\";\ndo \n  sleep 5\ndone\n"
+        env:
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: MYSQL_PASSWORD
+              name: jambonz-secrets
+        image: kanisterio/mysql-sidecar:0.40.0
+        imagePullPolicy: IfNotPresent
+        name: db-create-wait
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 900
+      topologySpreadConstraints:
+      - labelSelector:
+          matchLabels:
+            app: feature-server
+        maxSkew: 1
+        topologyKey: kubernetes.io/hostname
+        whenUnsatisfiable: ScheduleAnyway
+      volumes:
+      - emptyDir: {}
+        name: temp-audio-volume
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: voicemail-phraselist.json
+            path: voicemail-phraselist.json
+          name: voicemail-phraselist
+        name: voicemail-phraselist
+status:
+  availableReplicas: 1
+  conditions:
+  - lastTransitionTime: "2022-11-09T18:42:57Z"
+    lastUpdateTime: "2022-11-21T16:21:56Z"
+    message: ReplicaSet "feature-server-6cfd7c9b98" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  - lastTransitionTime: "2022-11-21T19:19:56Z"
+    lastUpdateTime: "2022-11-21T19:19:56Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  observedGeneration: 28
+  readyReplicas: 1
+  replicas: 1
+  updatedReplicas: 1
